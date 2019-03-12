@@ -242,7 +242,7 @@ class StateMachine implements StateMachineInterface
             throw new Exception\StateException(sprintf(
                 'Unable to find a state called "%s" on object "%s" with graph "%s".',
                 $name,
-                get_class($this->getObject()),
+                'StateObject',
                 $this->getGraph()
             ));
         }
